@@ -80,12 +80,10 @@ trainer.test(best_model, datamodule=datamodule)
 ## ファイル構成
 
 ```
-.
-├── checkpoints/            # 保存されたモデルのチェックポイント
-├── data/                   # MNISTデータセットの格納先
-├── train.py                # モデルのトレーニングを行うスクリプト
-├── requirements.txt        # 必要な依存関係
-└── README.md               # このドキュメント
+(...)
+  ├── data/                   # MNISTデータセットの格納先
+  ├── train.py                # モデルのトレーニングを行うスクリプト
+  └── README.md               # このドキュメント
 ```
 
 ## ライセンス
