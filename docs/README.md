@@ -1,15 +1,21 @@
 # MNIST Classification Model - Implementation with PyTorch Lightning
 
-This repository provides a sample implementation for training an image classification model on the MNIST dataset using PyTorch Lightning. It utilizes two different models: `NanoFCNet` (fully connected network) and `NanoConvNet` (convolutional neural network) for the classification task based on the MNIST dataset.
+- [Japanese](README.ja.md)
+- [English](README.md)
+
+This repository provides a sample implementation for training an image classification model on the MNIST dataset using
+PyTorch Lightning. It utilizes two different models: `NanoFCNet` (fully connected network) and `NanoConvNet` (
+convolutional neural network) for the classification task based on the MNIST dataset.
+
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Dependencies](#dependencies)
 - [Usage](#usage)
-  - [Setup](#setup)
-  - [Training the Model](#training-the-model)
-  - [Testing the Best Model](#testing-the-best-model)
+    - [Setup](#setup)
+    - [Training the Model](#training-the-model)
+    - [Testing the Best Model](#testing-the-best-model)
 - [File Structure](#file-structure)
 - [License](#license)
 
@@ -20,7 +26,8 @@ In this project, the following two models are used to classify MNIST digit image
 - `NanoFCNet`: A simple neural network using only fully connected layers.
 - `NanoConvNet`: A more complex neural network structure that includes convolutional layers.
 
-PyTorch Lightning is used to easily manage model training and validation. The best model is saved using the checkpoint feature.
+PyTorch Lightning is used to easily manage model training and validation. The best model is saved using the checkpoint
+feature.
 
 ## Dependencies
 
@@ -53,7 +60,8 @@ matplotlib
 
 ### Setup
 
-First, download the required dataset. The MNIST dataset will be automatically downloaded using the `MNISTDataModule` class.
+First, download the required dataset. The MNIST dataset will be automatically downloaded using the `MNISTDataModule`
+class.
 
 ```bash
 python train.py
@@ -61,7 +69,8 @@ python train.py
 
 ### Training the Model
 
-Running `train.py` will train the `NanoConvNet` (convolutional network) model. The training process uses PyTorch Lightning's `Trainer`. During training, accuracy on the validation dataset is monitored, and the best model is saved.
+Running `train.py` will train the `NanoConvNet` (convolutional network) model. The training process uses PyTorch
+Lightning's `Trainer`. During training, accuracy on the validation dataset is monitored, and the best model is saved.
 
 The best model will be saved in the `./checkpoints` directory during the training process.
 

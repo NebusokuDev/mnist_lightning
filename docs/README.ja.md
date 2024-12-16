@@ -1,5 +1,8 @@
 # MNIST分類モデル - PyTorch Lightningによる実装
 
+- [English](README.md)
+- [日本語](README.ja.md)
+
 このリポジトリは、PyTorch Lightningを使用してMNISTデータセットに対する画像分類モデルを訓練するサンプル実装です。2つの異なるモデル、`NanoFCNet`（全結合ネットワーク）および`NanoConvNet`（畳み込みニューラルネットワーク）を使用して、MNISTデータセットに基づいた分類タスクを行います。
 
 ## 目次
